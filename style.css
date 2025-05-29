@@ -2414,7 +2414,7 @@ main {
   bottom: 120px;
   right: 200px;
   width: 226px;
-  height: auto;
+  height: 68px;
   z-index: 1000;
   pointer-events: auto;
 }
