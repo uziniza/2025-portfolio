@@ -1,0 +1,1125 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - OH YU JIIN</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://webfontworld.github.io/pretendard/Pretendard.css"
+      rel="stylesheet"
+    />
+    <link href="https://use.typekit.net/[your-kit-code].css" rel="stylesheet" />
+    <link
+      href="https://db.onlinewebfonts.com/c/d3a1c44f6b2e3c7c5f9b5a0c4c3c0f0e?family=FONTSPRING+DEMO+-+Annuario+Expanded"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes slideFromRight {
+        0% {
+          transform: translateX(100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes slideFromLeft {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+      @keyframes stickerPop {
+        0% {
+          transform: scale(0.7) translateY(-30px);
+          opacity: 0;
+        }
+        80% {
+          transform: scale(1.1) translateY(5px);
+          opacity: 1;
+        }
+        100% {
+          transform: scale(1) translateY(0);
+          opacity: 1;
+        }
+      }
+      @keyframes receiptRun {
+        0% {
+          transform: translateY(100vh) rotate(-10deg);
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        80% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(0) rotate(0deg);
+          opacity: 1;
+        }
+      }
+      @keyframes receiptShake {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(-2deg);
+        }
+        50% {
+          transform: rotate(2deg);
+        }
+        80% {
+          transform: rotate(-2deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
+      .thank .text-wrapper-3,
+      .thank .you-like,
+      .thank .frame-8 .to,
+      .thank .frame-8 .text-wrapper-3,
+      .thank .payment,
+      .thank .frame-6,
+      .thank .frame-10,
+      .thank .frame-9 .p {
+        opacity: 0;
+      }
+      .thank .frame-9 {
+        opacity: 1;
+      }
+      .thank .frame-11 {
+        opacity: 0;
+        transform-origin: top center;
+      }
+      .frames {
+        position: relative;
+        min-height: 400px;
+      }
+      .supportme-img {
+        position: absolute;
+        bottom: 60px;
+        right: 80px;
+        width: 120px;
+        height: auto;
+        z-index: 1000;
+        pointer-events: auto;
+      }
+      .thanks {
+        position: relative;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section class="portfolio-cover">
+        <header class="info">
+          <div class="left">2025</div>
+          <div class="center">PORTFOLIO</div>
+          <div class="right">OH YU JIIN</div>
+        </header>
+
+        <div class="horizontal-line"></div>
+
+        <article class="title-section">
+          <div class="main-title">
+            <span class="designed">DESIGNED</span>
+            <span class="to-make">TO MAKE</span>
+          </div>
+          <div class="sub-title">
+            <div class="you">YOU</div>
+            <div class="checkout-wrapper">
+              <span class="bracket">[</span>
+              <span class="checkout">CHECKOUT</span>
+              <span class="bracket">]</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="description">
+          <h1 class="korean-title">[결제를 부르는 디자이너]</h1>
+          <p class="korean-desc">
+            사용자의 흐름에 공감하고, 결제라는 목표에<br />
+            닿을 수 있도록 돕는 디자이너 오유진입니다.
+          </p>
+        </article>
+
+        <div class="images">
+          <img
+            src="images/main-image.png"
+            alt="메인 이미지"
+            class="main-image"
+          />
+          <img src="images/clothes.png" alt="의류" class="clothes" />
+          <img src="images/bear.png" alt="곰인형" class="bear" />
+          <img src="images/price.png" alt="가격 태그" class="price" />
+          <img src="images/console.png" alt="게임 콘솔" class="console" />
+          <img src="images/diary.png" alt="다이어리" class="diary" />
+          <img src="images/crayon1.png" alt="크레용1" class="crayon1" />
+          <img src="images/crayon2.png" alt="크레용2" class="crayon2" />
+          <img src="images/candy1.png" alt="사탕1" class="candy1" />
+          <img src="images/candy2.png" alt="사탕2" class="candy2" />
+          <img src="images/candy3.png" alt="사탕3" class="candy3" />
+          <img src="images/red-gum.png" alt="빨간 껌" class="red-gum" />
+          <img src="images/green-gum.png" alt="초록 껌" class="green-gum" />
+          <img src="images/yellow-gum.png" alt="노란 껌" class="yellow-gum" />
+          <div class="shadow-ellipse"></div>
+        </div>
+
+        <nav class="tags">
+          <img
+            src="images/tool-skill.png"
+            alt="도구 스킬"
+            class="tag-tool-skill"
+          />
+          <img
+            src="images/consistency.png"
+            alt="일관성"
+            class="tag-consistency"
+          />
+          <img
+            src="images/insightful.png"
+            alt="통찰력"
+            class="tag-insightful"
+          />
+          <img src="images/empathy.png" alt="공감" class="tag-empathy" />
+        </nav>
+      </section>
+
+      <section class="profile">
+        <div class="frame">
+          <div class="div">
+            <div class="div-2">
+              <div class="div-3">
+                <div class="text-wrapper">ABOUT</div>
+                <img class="vector" src="./images/Vector.svg" />
+              </div>
+              <div class="rectangle"></div>
+            </div>
+            <p class="p">
+              <span class="span">결제를 부르는 디자이너 <br /></span>
+              <span class="text-wrapper-2">오유진</span>
+              <span class="text-wrapper-3">입니다!</span>
+            </p>
+          </div>
+          <div class="div-4">
+            <div class="profile">PROFILE</div>
+            <div class="div-5">
+              <div class="div-6">
+                <div class="div-7">
+                  <div class="contact">CONTACT</div>
+                  <div class="div-8">
+                    <div class="div-9">
+                      <div class="div-wrapper">
+                        <div class="text-wrapper-4">(ADRESS)</div>
+                      </div>
+                      <div class="text-wrapper-5">서울특별시 관악구 신림동</div>
+                    </div>
+                    <div class="div-10">
+                      <div class="div-wrapper-2">
+                        <div class="text-wrapper-6">(MAIL)</div>
+                      </div>
+                      <a
+                        href="mailto:geeny5@naver.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><div class="text-wrapper-7">geeny5@naver.com</div></a
+                      >
+                    </div>
+                    <div class="div-10">
+                      <div class="div-wrapper-2">
+                        <div class="text-wrapper-6">(PHONE)</div>
+                      </div>
+                      <div class="text-wrapper-7">010-4678-5301</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="div-11">
+                  <div class="text-wrapper">SKILLS</div>
+                  <div class="div-12">
+                    <div class="div-13">
+                      <div class="frame-wrapper">
+                        <div class="div-14">
+                          <div class="text-wrapper-8">Photoshop</div>
+                          <div class="div-15">
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frame-wrapper-2">
+                        <div class="div-14">
+                          <div class="text-wrapper-8">Illustrator</div>
+                          <div class="div-15">
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div-16">
+                        <div class="text-wrapper-9">Blender</div>
+                        <div class="div-15">
+                          <div class="rectangle-2"></div>
+                          <div class="rectangle-2"></div>
+                          <div class="rectangle-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="div-17">
+                      <div class="frame-wrapper-2">
+                        <div class="div-14">
+                          <div class="text-wrapper-9">Html</div>
+                          <div class="div-15">
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                            <div class="rectangle-2"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="div-18">
+                        <div class="c-SS">Css</div>
+                        <div class="div-15">
+                          <div class="rectangle-2"></div>
+                          <div class="rectangle-2"></div>
+                          <div class="rectangle-2"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-19">
+                <div class="div-7">
+                  <div class="education">EDUCATION</div>
+                  <div class="div-20">
+                    <div class="div-21">
+                      <div class="text-wrapper-10">2024.02</div>
+                      <div class="div-22">
+                        <div class="text-wrapper-11">
+                          수원과학대학교 치위생과
+                        </div>
+                        <div class="text-wrapper-12">졸업</div>
+                      </div>
+                    </div>
+                    <div class="div-21">
+                      <div class="text-wrapper-13">2021.03</div>
+                      <div class="div-22">
+                        <div class="text-wrapper-11">
+                          수원과학대학교 치위생과
+                        </div>
+                        <div class="text-wrapper-12">입학</div>
+                      </div>
+                    </div>
+                    <div class="div-23">
+                      <div class="div-wrapper-3">
+                        <div class="text-wrapper-14">2021.02</div>
+                      </div>
+                      <div class="div-24">
+                        <div class="text-wrapper-11">광신고등학교</div>
+                        <div class="text-wrapper-12">졸업</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="div-25">
+                  <div class="text-wrapper">LICENSE</div>
+                  <div class="div-26">
+                    <div class="div-9">
+                      <div class="div-wrapper-3">
+                        <div class="text-wrapper-14">2024.02</div>
+                      </div>
+                      <div class="div-27">
+                        <div class="text-wrapper-11">치과위생사 면허증</div>
+                      </div>
+                    </div>
+                    <div class="div-10">
+                      <div class="div-wrapper-3">
+                        <div class="text-wrapper-14">2013.06</div>
+                      </div>
+                      <div class="div-27">
+                        <div class="text-wrapper-11">ITQ 한글</div>
+                      </div>
+                    </div>
+                    <div class="div-10">
+                      <div class="div-wrapper-3">
+                        <div class="text-wrapper-14">2012.09</div>
+                      </div>
+                      <div class="div-27">
+                        <div class="text-wrapper-11">ITQ 파워포인트</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="div-28">
+                <div class="div-7">
+                  <div class="text-wrapper">EXPERIENCE</div>
+                  <div class="div-29">
+                    <div class="frame-wrapper-3">
+                      <div class="div-27">
+                        <div class="text-wrapper-14">2023년</div>
+                      </div>
+                    </div>
+                    <div class="div-30">
+                      <div class="text-wrapper-16">동행학습(멘토)</div>
+                      <div class="text-wrapper-17">반대표</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="div-31">
+                  <div class="frame-wrapper-3">
+                    <div class="div-27">
+                      <div class="text-wrapper-14">2022년</div>
+                    </div>
+                  </div>
+                  <div class="div-32">
+                    <div class="div-wrapper-4">
+                      <div class="text-wrapper-18">동행학습(멘토)</div>
+                    </div>
+                    <div class="div-wrapper-5">
+                      <div class="text-wrapper-18">반대표 및 학생회</div>
+                    </div>
+                    <div class="div-33">
+                      <div class="text-wrapper-19">동아리 '위드&#39;</div>
+                      <div class="text-wrapper-12">봉사 및 교육 동아리</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="banner" style="transform: rotate(-10deg)">
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div-2">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="banner2" style="transform: rotate(-10deg)">
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div-2">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+        <div class="div">
+          <div class="text-wrapper">UIUX DESIGNER</div>
+          <img class="img" src="./images/line3.svg" />
+          <div class="text-wrapper">PORTFOLIO</div>
+          <div class="frame-wrapper">
+            <div class="div-wrapper"><div class="text-wrapper-2">R</div></div>
+          </div>
+        </div>
+      </div>
+
+      <article class="content-item">
+        <div class="contents-item">
+          <img class="vector-3-bg" src="./images/vector-3.svg" />
+          <div class="image-paper">
+            <img class="img-pp" src="images/paper.png" />
+          </div>
+          <div class="div contents-animate">
+            <div class="contents typing" data-typing="CONTENTS"></div>
+            <div class="element-wrapper">
+              <p class="element">
+                <span class="text-wrapper">(</span>
+                <span class="span">+4</span>
+                <span class="text-wrapper">)</span>
+              </p>
+            </div>
+          </div>
+          <div class="div-2 contents-animate delay2">
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-3">
+              <div class="div-wrapper">
+                <div class="div-wrapper">
+                  <div class="text-wrapper-2">
+                    <a
+                      href="https://drive.google.com/file/d/1MVefhB7J4JJHzGjVII2D5G4cLV6Gspg6/view?usp=drive_link"
+                      target="_blank"
+                      style="color: inherit; text-decoration: none"
+                    >
+                      APP UIUX
+                      <img
+                        src="images/contentvector.svg"
+                        alt="content vector"
+                        class="content-vector"
+                        style="
+                          vertical-align: middle;
+                          margin-left: 8px;
+                          width: 24px;
+                          height: 24px;
+                          position: relative;
+                          top: -2px;
+                        "
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="div-4">
+                <div class="text-wrapper-3">/001</div>
+                <div class="div-5">
+                  <div class="div-6">
+                    <p class="text-wrapper-4">하루를 솔직하게 기록할 수 있는</p>
+                    <p class="p">
+                      <span class="text-wrapper-5">CHITTY CAT</span>
+                      <span class="text-wrapper-6"> 어플 구축</span>
+                    </p>
+                  </div>
+                  <div class="div-7">
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-7">#UIUX</div>
+                    </div>
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-8">#어플 디자인</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-3">
+              <div class="div-wrapper">
+                <div class="web-redesign">
+                  <a
+                    href="https://drive.google.com/file/d/1qARJ6Vr2BEPLiZwy8Z9iTzzRWQDg43wZ/view?usp=drive_link"
+                    target="_blank"
+                    style="color: inherit; text-decoration: none"
+                  >
+                    WEB REDESIGN
+                    <img
+                      src="images/contentvector.svg"
+                      alt="content vector"
+                      class="content-vector"
+                      style="
+                        vertical-align: middle;
+                        margin-left: 8px;
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        top: -2px;
+                      "
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="div-8">
+                <div class="text-wrapper-3">/002</div>
+                <div class="div-5">
+                  <div class="div-6">
+                    <p class="text-wrapper-4">
+                      사용자 중심 브랜드 경험을 제공하는
+                    </p>
+                    <p class="p">
+                      <span class="text-wrapper-5">MC LAREN </span>
+                      <span class="text-wrapper-6">웹 리디자인</span>
+                    </p>
+                  </div>
+                  <div class="div-9">
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-7">#UIUX</div>
+                    </div>
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-8">#웹디자인</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-3">
+              <div class="div-wrapper">
+                <div class="text-wrapper-2">
+                  <a
+                    href="https://drive.google.com/file/d/14oZeRlcesK7WmwERcBeMS8RtHNBnvhKP/view?usp=drive_link"
+                    target="_blank"
+                    style="color: inherit; text-decoration: none"
+                  >
+                    PROMOTION
+                    <img
+                      src="images/contentvector.svg"
+                      alt="content vector"
+                      class="content-vector"
+                      style="
+                        vertical-align: middle;
+                        margin-left: 8px;
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        top: -2px;
+                      "
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="div-4">
+                <div class="text-wrapper-3">/003</div>
+                <div class="div-10">
+                  <div class="div-6">
+                    <div class="text-wrapper-4">
+                      신비롭고 판타지한 분위기를 구현한
+                    </div>
+                    <p class="p">
+                      <span class="text-wrapper-6">엘더스크롤</span>
+                      <span class="text-wrapper-5"> : Vi 게임 </span>
+                      <span class="text-wrapper-6">프로모션 </span>
+                    </p>
+                  </div>
+                  <div class="div-9">
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-7">#PROMOTION</div>
+                    </div>
+                    <div class="div-wrapper-2">
+                      <div class="text-wrapper-8">#웹디자인</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-3">
+              <div class="div-wrapper">
+                <div class="text-wrapper-2">
+                  <a
+                    href="https://drive.google.com/file/d/1r-XuQVtcplC16oHPxNsVtn_aJrygGgC1/view?usp=drive_link"
+                    target="_blank"
+                    style="color: inherit; text-decoration: none"
+                  >
+                    PROMOTION
+                    <img
+                      src="images/contentvector.svg"
+                      alt="content vector"
+                      class="content-vector"
+                      style="
+                        vertical-align: middle;
+                        margin-left: 8px;
+                        width: 24px;
+                        height: 24px;
+                        position: relative;
+                        top: -2px;
+                      "
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="div-11">
+                <div class="text-wrapper-3">/004</div>
+                <div class="div-12">
+                  <div class="div-13">
+                    <p class="text-wrapper-4">
+                      일상의 반복을 직선과 곡선으로 표현한
+                    </p>
+                    <p class="p">
+                      <span class="text-wrapper-5">OJOS X W</span
+                      ><span class="text-wrapper-6">컨셉 편집 프로모션</span>
+                    </p>
+                  </div>
+                  <div class="div-14">
+                    <div class="div-wrapper-3">
+                      <div class="text-wrapper-7">#PROMOTION</div>
+                    </div>
+                    <div class="div-wrapper-3">
+                      <div class="text-wrapper-8">#웹디자인</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-15">
+              <div class="text-wrapper-9">PERSONAL 100% PROJECT</div>
+              <div class="text-wrapper-10">UIUX PORTFOLIO</div>
+            </div>
+            <img class="img1" src="./images/line 5.svg" />
+            <div class="div-16">
+              <img class="star" src="./images/star.png" />
+              <img class="star-2" src="./images/star-3.png" />
+              <img class="star-3" src="./images/star5.png" />
+            </div>
+          </div>
+          <img class="element-2 sticker-animate" src="./images/sticker.png" />
+          <img class="image sticker-animate" src="./images/yellow.png" />
+        </div>
+      </article>
+    </main>
+    <section class="thanks">
+      <div class="thank">
+        <div class="div">
+          <div class="frame">
+            <header class="info">
+              <div class="left">2025</div>
+              <div class="center">PORTFOLIO</div>
+              <div class="right">OH YU JIIN</div>
+            </header>
+            <div class="horizontal-line"></div>
+          </div>
+          <img
+            class="image-saturation-up"
+            src="./images/image-saturation-up 3.png"
+          />
+          <img class="img" src="./images/image-saturation-up 2.png" />
+          <div class="frame-3">
+            <div class="frame-4">
+              <div class="frame-5">
+                <div class="text-wrapper-3">WOULD</div>
+                <div class="you-like">YOU LIKE</div>
+                <img class="frame-6" src="./images/thanktag.png" />
+              </div>
+              <div class="frame-7">
+                <div class="frame-8">
+                  <div class="to-wrapper"><div class="to">TO</div></div>
+                  <div class="text-wrapper-3">MAKE</div>
+                </div>
+                <div class="payment-wrapper">
+                  <div class="payment">PAYMENT?</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-9">
+              <img class="frame-10" src="./images/frame-86.svg" />
+              <p class="p">
+                <span class="span"
+                  >프로젝트마다 전혀 다른 옷을 입고 달렸지만, <br />그 안에
+                  공통된 건 결국
+                </span>
+                <span class="text-wrapper-4">‘재밌고 편하게 만들자’</span>
+                <span class="span"
+                  >였습니다.<br />이제 실무에서 제 방식의 재미를 풀어보고
+                  싶습니다.</span
+                >
+              </p>
+            </div>
+          </div>
+          <img class="frame-11" src="./images/reciept.png" />
+          <img class="image" src="./images/clip.png" />
+        </div>
+        <div class="frame-wrapper">
+          <div class="div-wrapper">
+            <div class="designed-to-make-wrapper">
+              <p class="designed-to-make">
+                <span class="text-wrapper-7">Designed </span>
+                <span class="text-wrapper-8">to Make </span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./images/supportme.png"
+        alt="Support Me"
+        class="supportme-img"
+      />
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const target = document.querySelector(".contents-item");
+        const paper = document.querySelector(".image-paper");
+        const vector3 = document.querySelector(".vector-3-bg");
+        const contents = document.querySelectorAll(".contents-animate");
+        const sticker = document.querySelector(".element-2.sticker-animate");
+        const yellow = document.querySelector(".image.sticker-animate");
+        const typings = document.querySelectorAll(".typing[data-typing]");
+        let animated = false;
+
+        function typeEffect(element, text, speed, callback) {
+          let i = 0;
+          function startTyping() {
+            element.innerHTML = "";
+            element.classList.add("active"); // opacity 1로 fade-in
+            // 커서 추가
+            const cursor = document.createElement("span");
+            cursor.className = "cursor";
+            element.appendChild(cursor);
+            function typing() {
+              if (i < text.length) {
+                element.insertBefore(
+                  document.createTextNode(text.charAt(i)),
+                  cursor
+                );
+                i++;
+                setTimeout(typing, speed);
+              } else {
+                cursor.remove();
+                if (callback) callback();
+              }
+            }
+            typing();
+          }
+          setTimeout(startTyping, 10); // 타이핑 시작을 약간 지연시켜 자연스러운 효과
+        }
+
+        function activateAnimation() {
+          if (animated) return;
+          animated = true;
+          paper.classList.add("active");
+
+          setTimeout(() => {
+            if (typings.length > 0) {
+              typeEffect(typings[0], typings[0].dataset.typing, 60, () => {
+                // 컨텐츠 리스트 1초 후
+                setTimeout(() => {
+                  const etcContent = document.querySelector(
+                    ".div-2.contents-animate.delay2"
+                  );
+                  if (etcContent) etcContent.classList.add("active");
+                }, 1000);
+                // vector3 1.3초 후
+                setTimeout(() => {
+                  if (vector3) vector3.classList.add("active");
+                }, 1300);
+                // yellow 1.5초 후
+                setTimeout(() => {
+                  if (yellow) yellow.classList.add("active");
+                }, 1500);
+                // sticker 1.7초 후
+                setTimeout(() => {
+                  if (sticker) sticker.classList.add("active");
+                }, 1700);
+              });
+            }
+          }, 1200);
+        }
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            if (entries[0].isIntersecting) {
+              activateAnimation();
+              observer.disconnect();
+            }
+          },
+          { threshold: 0.3 }
+        );
+        if (target) observer.observe(target);
+
+        // thanks 헤더 애니메이션
+        const thanksHeader = document.querySelector(".thanks .info");
+        const thanksLine = document.querySelector(".thanks .horizontal-line");
+        const thanksSection = document.querySelector(".thanks");
+        const would = document.querySelector(".thank .frame-5 .text-wrapper-3");
+        const youLike = document.querySelector(".thank .you-like");
+        const to = document.querySelector(".thank .frame-8 .to");
+        const make = document.querySelector(".thank .frame-8 .text-wrapper-3");
+        const payment = document.querySelector(".thank .payment");
+        const thankTag = document.querySelector(".thank .frame-6");
+        const frame10 = document.querySelector(".thank .frame-10");
+        const pText = document.querySelector(".thank .frame-9 .p");
+
+        if (thanksHeader && thanksLine && thanksSection) {
+          const thanksObserver = new IntersectionObserver(
+            (entries) => {
+              if (entries[0].isIntersecting) {
+                thanksHeader.style.opacity = "1";
+                thanksHeader.style.animation =
+                  "slideDown 0.8s ease-out forwards";
+                thanksLine.style.opacity = "1";
+                thanksLine.style.animation =
+                  "expandLine 0.8s ease-out forwards";
+                // 타이틀 애니메이션 순차 실행
+                setTimeout(() => {
+                  if (would) {
+                    would.style.opacity = "1";
+                    would.style.animation =
+                      "slideFromRight 0.8s cubic-bezier(0.4,0,0.2,1) forwards";
+                  }
+                  if (youLike) {
+                    youLike.style.opacity = "1";
+                    youLike.style.animation =
+                      "slideFromRight 0.8s cubic-bezier(0.4,0,0.2,1) forwards";
+                  }
+                  // TO, MAKE, PAYMENT? 순차 등장
+                  setTimeout(() => {
+                    if (to) {
+                      to.style.opacity = "1";
+                      to.style.animation =
+                        "slideFromLeft 0.8s cubic-bezier(0.4,0,0.2,1) forwards";
+                    }
+                    if (make) {
+                      make.style.opacity = "1";
+                      make.style.animation =
+                        "slideFromLeft 0.8s cubic-bezier(0.4,0,0.2,1) forwards";
+                    }
+                    if (payment) {
+                      payment.style.opacity = "1";
+                      payment.style.animation =
+                        "slideFromLeft 0.8s cubic-bezier(0.4,0,0.2,1) forwards";
+                    }
+                    // 태그(스티커) 애니메이션
+                    setTimeout(() => {
+                      const receipt =
+                        document.querySelector(".thank .frame-11");
+                      const frame10 =
+                        document.querySelector(".thank .frame-10");
+                      const pText =
+                        document.querySelector(".thank .frame-9 .p");
+                      const thankTag =
+                        document.querySelector(".thank .frame-6");
+
+                      // 1. 영수증 등장 (2.2초로 느리게)
+                      if (receipt) {
+                        receipt.style.opacity = "1";
+                        receipt.style.animation =
+                          "receiptRun 0.9s cubic-bezier(0.7,0,0.2,1) forwards";
+                        // 2. 영수증 흔들림(살랑살랑, 2.5초로 더 느리게)
+                        setTimeout(() => {
+                          receipt.style.animation =
+                            "receiptShake 3.2s cubic-bezier(0.4,0,0.2,1) infinite";
+                          // 3. 태그(스티커) 등장 (영수증 흔들림 시작 후에!)
+                          setTimeout(() => {
+                            if (thankTag) {
+                              thankTag.style.opacity = "1";
+                              thankTag.style.animation =
+                                "stickerPop 0.7s cubic-bezier(0.4,0,0.2,1) forwards";
+                            }
+                            // 4. 화살표 등장
+                            setTimeout(() => {
+                              if (frame10) {
+                                frame10.style.opacity = "1";
+                                frame10.style.transition =
+                                  "opacity 0.7s cubic-bezier(0.4,0,0.2,1)";
+                              }
+                              // 5. p 등장
+                              setTimeout(() => {
+                                if (pText) {
+                                  pText.style.opacity = "1";
+                                  pText.style.transition =
+                                    "opacity 0.7s cubic-bezier(0.4,0,0.2,1)";
+                                }
+                              }, 500);
+                            }, 700);
+                          }, 700); // 태그는 영수증 흔들림 시작 후 0.7s 뒤
+                        }, 900); // 영수증 흔들림은 등장 0.9s 후
+                      }
+                    }, 800); // TO/MAKE/PAYMENT 등장 후 0.8s 뒤
+                  }, 800);
+                }, 900);
+                thanksObserver.disconnect();
+              }
+            },
+            { threshold: 0.3 }
+          );
+          thanksObserver.observe(thanksSection);
+        }
+
+        // 줄 애니메이션이 끝난 뒤 태그 등장
+        const tags = document.querySelector(".tags");
+        if (tags) {
+          tags.style.opacity = "0";
+          setTimeout(() => {
+            tags.style.transition = "opacity 0.6s cubic-bezier(0.4,0,0.2,1)";
+            tags.style.opacity = "1";
+          }, 1400); // 줄 애니메이션(0.8s) + 약간의 딜레이
+        }
+      });
+    </script>
+  </body>
+</html>

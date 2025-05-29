@@ -1,0 +1,2420 @@
+@font-face {
+  font-family: "FONTSPRING DEMO - Annuario Expanded";
+  src: url("fonts/Fontspring-DEMO-annuario-expanded.otf") format("opentype");
+  font-weight: 395;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Annuario Expanded";
+  src: url("fonts/Fontspring-DEMO-annuario-expandedmedium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FONTSPRING DEMO - Annuario Expanded";
+  src: url("fonts/Fontspring-DEMO-annuario-expandedlight.otf")
+    format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background-color: #0c0c0c;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  color: #fafafa;
+}
+
+main {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.portfolio-cover,
+.profile,
+.contents-item {
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.portfolio-cover {
+  height: 1080px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Info section */
+.info {
+  position: absolute;
+  top: 44.04px;
+  left: 58px;
+  right: 58px;
+  display: flex;
+}
+
+.info .left {
+  position: absolute;
+  left: 0;
+  color: #4d4d4d;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  animation: slideDown 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.info .center {
+  position: absolute;
+  left: 837.5px;
+  color: #4d4d4d;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  animation: slideDown 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.info .right {
+  position: absolute;
+  right: 0;
+  color: #4d4d4d;
+  font-family: "Pretendard", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  animation: slideDown 0.8s ease-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+/* Horizontal Line */
+.horizontal-line {
+  position: absolute;
+  top: 88.036376953125px;
+  left: 58px;
+  right: 58px;
+  height: 1px;
+  background-color: #4d4d4d;
+  transform-origin: left;
+  animation: expandLine 0.8s ease-out forwards;
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+/* Title section */
+.title-section {
+  position: absolute;
+  left: 97.76px;
+  top: 109.55px;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.main-title {
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-size: 135px;
+  font-weight: 395;
+  line-height: 175.5px;
+  display: flex;
+  gap: 0.5ch;
+  animation: slideFromLeft 1s ease-out forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+.main-title .designed {
+  color: #004ccd;
+}
+
+.main-title .to-make {
+  color: #fafafa;
+}
+
+.sub-title {
+  margin-top: -45px;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  animation: slideFromRight 1s ease-out forwards;
+  animation-delay: 1.3s;
+  opacity: 0;
+}
+
+.you {
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-size: 50px;
+  font-weight: 395;
+  line-height: 65px;
+  color: #fafafa;
+  margin-top: 25px;
+}
+
+.checkout-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 0;
+}
+
+.checkout {
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-size: 135px;
+  font-weight: 395;
+  line-height: 175.5px;
+  color: #fafafa;
+  margin: 0 6px;
+}
+
+.bracket {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 200;
+  font-size: 110px;
+  line-height: 143px;
+  color: #fafafa;
+}
+
+/* Description */
+.description {
+  position: absolute;
+  left: 111px;
+  top: 695.0318603515625px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.korean-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #d9d9d9;
+  margin-bottom: 21px;
+  letter-spacing: -0.84px;
+  line-height: 37.8px;
+  font-family: "Pretendard", sans-serif;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+.korean-desc {
+  font-size: 19px;
+  font-weight: 500;
+  color: #979797;
+  line-height: 28.5px;
+  letter-spacing: -0.57px;
+  font-family: "Pretendard", sans-serif;
+  animation: fadeInUp 0.8s ease-out forwards;
+  animation-delay: 2.2s;
+  opacity: 0;
+}
+
+/* Images */
+.images {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.images img {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
+}
+
+.main-image {
+  position: absolute;
+  left: 656.18px;
+  top: 381.74px;
+  /* width: 1312.55px;
+  height: 875.04px; */
+}
+
+.clothes {
+  position: absolute;
+  left: 800px;
+  top: 535.88px;
+  /* width: 505.38px;
+  height: 608.45px; */
+}
+
+.bear {
+  position: absolute;
+  left: 1260px;
+  top: 420.77px;
+}
+
+.price {
+  position: absolute;
+  left: 1550px;
+  top: 370px;
+  z-index: 3;
+}
+
+.console {
+  position: absolute;
+  left: 810px;
+  top: 540.64px;
+  /* width: 258px;
+  height: 157.49px; */
+}
+
+.diary {
+  position: absolute;
+  left: 1450px;
+  top: 810px;
+}
+
+.candy1 {
+  position: absolute;
+  left: 1100px;
+  top: 660px;
+  /* width: 80.39006286586482px;
+  height: 53.77040274988758px; */
+  animation: floatReverse 4.5s ease-in-out infinite;
+}
+
+.candy2 {
+  position: absolute;
+  left: 920px;
+  top: 937.37109375px;
+  animation: floatReverse 4.5s ease-in-out infinite;
+}
+
+.candy3 {
+  position: absolute;
+  left: 1450px;
+  top: 850px;
+  animation: floatReverse 4.5s ease-in-out infinite;
+}
+
+.red-gum {
+  position: absolute;
+  left: 1680px;
+  top: 999px;
+  /* width: 48.562817103262205px;
+  height: 47.45073678671588px; */
+}
+
+.green-gum {
+  position: absolute;
+  left: 1660px;
+  top: 947.407958984375px;
+  /* width: 46.54650605533243px;
+  height: 48.662161426603234px; */
+}
+
+.yellow-gum {
+  position: absolute;
+  left: 1635px;
+  top: 969.8211876038292px;
+}
+
+/* Keywords */
+.keywords {
+  position: absolute;
+  right: 58px;
+  bottom: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.keywords div {
+  background-color: #f1fe37;
+  color: #000;
+  padding: 10px 15px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32.4px;
+  transform: skew(-10deg);
+  width: fit-content;
+}
+
+/* Keyword Tags */
+.keyword-tags,
+.tag {
+  display: none;
+}
+
+.tags {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+}
+
+.tags img {
+  opacity: 0;
+  transform: translateX(100%);
+  animation: slideInFromRight 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tags img:hover {
+  transform: translateX(100%) scale(2.7);
+  filter: brightness(1.25) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+  transform-origin: center;
+}
+
+.tag-tool-skill {
+  position: absolute;
+  left: 650px;
+  top: 620px;
+}
+
+.tag-consistency {
+  position: absolute;
+  left: 1170px;
+  top: 570px;
+}
+
+.tag-insightful {
+  position: absolute;
+  left: 860px;
+  top: 860px;
+}
+
+.tag-empathy {
+  position: absolute;
+  left: 1600px;
+  top: 800px;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes floatReverse {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.crayon1 {
+  position: absolute;
+  left: 1390px;
+  top: 930px;
+  animation: float 5s ease-in-out infinite;
+}
+
+.crayon2 {
+  position: absolute;
+  left: 1485px;
+  top: 980px;
+  animation: floatReverse 5s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes expandLine {
+  0% {
+    transform: scaleX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(30%);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* 프로필 */
+.profile {
+  height: 800px;
+  margin: 0 auto;
+}
+.frame {
+  display: flex;
+  width: 1920px;
+  height: 800px;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 146px;
+  position: relative;
+  padding: 220px;
+}
+
+.frame .div {
+  display: flex;
+  flex-direction: column;
+  width: 328px;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px 0px;
+  position: relative;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 3.5s;
+  opacity: 0;
+}
+
+.frame .div-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 19px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  background-color: #004ccc;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: #8c8c8c;
+}
+
+.frame .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+  white-space: nowrap;
+}
+
+.frame .vector {
+  position: relative;
+  width: 19.06px;
+  height: 18.81px;
+  margin-right: -1.06px;
+}
+
+.frame .rectangle {
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  height: 443px;
+  background-color: #d9d9d9;
+  border: 1px solid;
+  border-color: #8c8c8c;
+}
+
+.frame .p {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 400;
+  color: transparent;
+  font-size: 32px;
+  letter-spacing: -0.96px;
+  line-height: 43.2px;
+}
+
+.frame .span {
+  font-weight: 500;
+  color: #ffffff;
+  letter-spacing: -0.31px;
+}
+
+.frame .text-wrapper-2 {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-weight: 700;
+  color: #3a7bea;
+  letter-spacing: -0.31px;
+}
+
+.frame .text-wrapper-3 {
+  font-weight: 500;
+  color: #3a7bea;
+  letter-spacing: -0.31px;
+}
+
+.frame .div-4 {
+  display: flex;
+  flex-direction: column;
+  width: 1004px;
+  align-items: flex-start;
+  gap: 69px;
+  position: relative;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 4s;
+  opacity: 0;
+}
+
+.frame .profile {
+  position: relative;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+  font-size: 40px;
+  letter-spacing: 0;
+  line-height: 52px;
+  align-self: flex-start;
+  text-align: left;
+  margin-left: 0;
+}
+
+.frame .div-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 66px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 4.5s;
+  opacity: 0;
+}
+
+.frame .div-6 {
+  display: flex;
+  align-items: flex-start;
+  gap: 102px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-7 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 26px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .contact {
+  position: relative;
+  width: 151px;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #fafafa;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.frame .div-8 {
+  display: flex;
+  flex-direction: column;
+  width: 266px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 6px 0px;
+  position: relative;
+}
+
+.frame .div-9 {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .text-wrapper-4 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-left: -1.5px;
+  margin-right: -1.5px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #5e5e5e;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 24.3px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  margin-right: -4px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #d3d3d3;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  line-height: 24.3px;
+  white-space: nowrap;
+}
+
+.frame .div-10 {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper-2 {
+  display: flex;
+  width: 80px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+}
+
+.frame .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #5e5e5e;
+  font-size: 18px;
+  letter-spacing: 0.18px;
+  line-height: 24.3px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  color: #d3d3d3;
+  font-size: 18px;
+  letter-spacing: -0.54px;
+  line-height: 24.3px;
+  white-space: nowrap;
+}
+
+.frame .div-11 {
+  display: flex;
+  width: 455px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frame .div-12 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 47px;
+  padding: 7px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-13 {
+  display: flex;
+  flex-direction: column;
+  width: 159.25px;
+  align-items: flex-start;
+  gap: 16px;
+  position: relative;
+}
+
+.frame .frame-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-14 {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-8 {
+  position: relative;
+  align-self: stretch;
+  width: 81px;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.frame .div-15 {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .rectangle-2 {
+  position: relative;
+  width: 8.5px;
+  height: 8.5px;
+  background-color: #6a6a6a;
+}
+
+.frame .frame-wrapper-2 {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .div-16 {
+  display: inline-flex;
+  align-items: center;
+  gap: 34px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.frame .div-17 {
+  display: flex;
+  flex-direction: column;
+  width: 89.5px;
+  align-items: flex-start;
+  gap: 13px;
+  position: relative;
+}
+
+.frame .div-18 {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .c-SS {
+  position: relative;
+  width: 44px;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20.8px;
+}
+
+.frame .div-19 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 65px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .education {
+  position: relative;
+  width: 151px;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 24px;
+  letter-spacing: 0;
+  line-height: 31.2px;
+}
+
+.frame .div-20 {
+  display: flex;
+  flex-direction: column;
+  width: 305px;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 3px 0px;
+  position: relative;
+}
+
+.frame .div-21 {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-10 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-weight: 600;
+  color: #747474;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.frame .div-22 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -7px;
+}
+
+.frame .text-wrapper-11 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-12 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #747474;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.frame .text-wrapper-13 {
+  position: relative;
+  width: 64px;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-weight: 600;
+  color: #747474;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+
+.frame .div-23 {
+  display: inline-flex;
+  align-items: center;
+  gap: 36px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper-3 {
+  display: flex;
+  flex-direction: column;
+  width: 64px;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+}
+
+.frame .text-wrapper-14 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-weight: 600;
+  color: #747474;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.frame .div-24 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-25 {
+  display: flex;
+  width: 374px;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+}
+
+.frame .div-26 {
+  display: flex;
+  flex-direction: column;
+  width: 217px;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 16px;
+  padding: 4px 0px;
+  position: relative;
+}
+
+.frame .div-27 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-28 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 176px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-29 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 36px;
+  padding: 3px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .frame-wrapper-3 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-15 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-SemiBold", sans-serif;
+  font-weight: 600;
+  color: var(--variable-collection-grayscale-black);
+  font-size: 10px;
+  letter-spacing: 0;
+  line-height: 15px;
+  white-space: nowrap;
+}
+
+.frame .div-30 {
+  display: flex;
+  flex-direction: column;
+  width: 107px;
+  align-items: center;
+  gap: 4px;
+  position: relative;
+}
+
+.frame .text-wrapper-16 {
+  position: relative;
+  align-self: stretch;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.frame .text-wrapper-17 {
+  position: relative;
+  align-self: stretch;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.frame .div-31 {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 36px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-32 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-wrapper-4 {
+  display: flex;
+  width: 249px;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-18 {
+  position: relative;
+  width: 120px;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+
+.frame .div-wrapper-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.frame .div-33 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.frame .text-wrapper-19 {
+  position: relative;
+  width: 91px;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #fafafa;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 27px;
+}
+/* 배너 */
+
+.banner {
+  display: inline-flex;
+  align-items: center;
+  transform: rotate(-10deg);
+  animation: slideLoop 35s linear infinite;
+  vertical-align: top;
+  gap: 20px;
+  padding: 4px 16px 7px;
+  position: relative;
+  background-color: #282828;
+  margin-top: -10px;
+  z-index: 0;
+}
+@keyframes slideLoop {
+  0% {
+    transform: rotate(-12deg) translateX(0);
+  }
+  100% {
+    transform: rotate(-12deg) translateX(-50%);
+  }
+}
+
+.banner .div {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+  opacity: 0;
+}
+
+.banner .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: 5px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded-Regular", sans-serif;
+  font-weight: 400;
+  color: #818181;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
+
+.banner .img {
+  position: relative;
+  width: 63.53px;
+  margin-top: -4.11px;
+  margin-bottom: -4.11px;
+  transform: rotate(9.92deg);
+}
+
+.banner .frame-wrapper {
+  display: inline-flex;
+  gap: 10px;
+  padding: 3px 0px 0px;
+  align-self: stretch;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+}
+
+.banner .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 27px;
+  border: 1px solid;
+  border-color: #818181;
+  align-items: center;
+  position: relative;
+}
+
+.banner .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #818181;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16.2px;
+  white-space: nowrap;
+}
+
+.banner .div-2 {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+  margin-right: px;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 2s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* 배너2 */
+
+.banner2 {
+  display: inline-flex;
+  align-items: center;
+
+  animation: slideLoop2 30s linear infinite;
+  vertical-align: top;
+  gap: 20px;
+  padding: 4px 16px 7px;
+  position: relative;
+  background-color: #474747;
+  margin-top: 60px;
+}
+@keyframes slideLoop2 {
+  0% {
+    transform: rotate(-5deg) translateX(0);
+  }
+  100% {
+    transform: rotate(-5deg) translateX(-50%);
+  }
+}
+
+.banner2 .div {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: calc(0.3s * var(--i));
+  opacity: 0;
+}
+
+.banner2 .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: 5px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded-Regular", sans-serif;
+  font-weight: 400;
+  color: #0c0c0c;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
+
+.banner2 .img {
+  position: relative;
+  width: 63.53px;
+  margin-top: -4.11px;
+  margin-bottom: -4.11px;
+}
+
+.banner2 .frame-wrapper {
+  display: inline-flex;
+  gap: 10px;
+  padding: 3px 0px 0px;
+  align-self: stretch;
+  flex: 0 0 auto;
+  align-items: center;
+  position: relative;
+}
+
+.banner2 .div-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 18px;
+  height: 18px;
+  justify-content: center;
+  gap: 10px;
+  border-radius: 27px;
+  border: 1px solid;
+  border-color: #0c0c0c;
+  align-items: center;
+  position: relative;
+}
+
+.banner2 .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #0c0c0c;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16.2px;
+  white-space: nowrap;
+}
+
+.banner2 .div-2 {
+  display: inline-flex;
+  gap: 8px;
+  flex: 0 0 auto;
+  margin-right: px;
+  align-items: center;
+  position: relative;
+  animation: fadeIn 1s ease forwards;
+  animation-delay: 1s;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* 컨텐츠 */
+.contents-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 1001px;
+  justify-content: center;
+  gap: 57px;
+  padding: 61px 129px 54px;
+  position: relative;
+  margin-top: 200px;
+  z-index: 10;
+}
+
+.contents-item .div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contents-item .contents {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #0c0c0c;
+  font-size: 80px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 104px;
+  white-space: nowrap;
+}
+
+.contents-item .element-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60px;
+  height: 60px;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 0px;
+  position: relative;
+  border-radius: 101px;
+}
+
+.contents-item .element {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #0c0c0c;
+  font-size: 30px;
+  text-align: center;
+  letter-spacing: 0;
+  line-height: 39px;
+  white-space: nowrap;
+}
+
+.contents-item .text-wrapper {
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #0c0c0c;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 39px;
+}
+
+.contents-item .span {
+  font-family: "Pretendard-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.contents-item .div-2 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  flex: 0 0 auto;
+  margin-left: -52.5px;
+  margin-right: -52.5px;
+}
+
+.contents-item .img1 {
+  margin-top: -1px;
+  position: relative;
+  width: 1444px;
+  height: 2px;
+}
+
+.contents-item .div-3 {
+  display: flex;
+  align-items: center;
+  gap: 174px;
+  padding: 0px 46px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.contents-item .div-wrapper {
+  display: flex;
+  width: 328px;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+  padding: 0px 0px 0px 28px;
+  position: relative;
+}
+
+.contents-item .text-wrapper-2 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #004ccc;
+  font-size: 34px;
+  letter-spacing: 0;
+  line-height: 44.2px;
+  white-space: nowrap;
+}
+.contents-item .div-4 {
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 172px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #767676;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 20.8px;
+  white-space: nowrap;
+}
+
+.contents-item .div-5 {
+  display: inline-flex;
+  align-items: center;
+  gap: 159px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contents-item .div-6 {
+  display: flex;
+  flex-direction: column;
+  width: 287px;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+}
+
+.contents-item .text-wrapper-4 {
+  align-self: stretch;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #1a1a1a;
+  font-size: 16px;
+  letter-spacing: -0.48px;
+  line-height: 20.8px;
+  position: relative;
+  margin-top: -1px;
+}
+
+.contents-item .p {
+  position: relative;
+  width: fit-content;
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: #0c0c0c;
+  font-size: 24px;
+  line-height: 31.2px;
+  white-space: nowrap;
+}
+
+.contents-item .text-wrapper-5 {
+  letter-spacing: 0;
+}
+
+.contents-item .text-wrapper-6 {
+  letter-spacing: -0.17px;
+}
+
+.contents-item .div-7 {
+  align-items: flex-end;
+  justify-content: center;
+  display: inline-flex;
+  gap: 17px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .div-wrapper-2 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+.contents-item .text-wrapper-7 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #004ccc;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 18.2px;
+  white-space: nowrap;
+}
+
+.contents-item .text-wrapper-8 {
+  width: fit-content;
+  font-family: "Pretendard-Regular", sans-serif;
+  font-weight: 400;
+  color: #004ccc;
+  font-size: 14px;
+  letter-spacing: -0.42px;
+  line-height: 18.2px;
+  white-space: nowrap;
+  position: relative;
+  margin-top: -1px;
+}
+
+.contents-item .img1 {
+  position: relative;
+  width: 1444px;
+  height: 2px;
+}
+
+.contents-item .web-redesign {
+  position: relative;
+  width: fit-content;
+  margin-top: -2px;
+  margin-left: -9px;
+  margin-right: -7px;
+  -webkit-text-stroke: 1px #004ccc;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-weight: 400;
+  color: #004ccc;
+  font-size: 30px;
+  letter-spacing: 0;
+  line-height: 39px;
+  white-space: nowrap;
+}
+
+.contents-item .div-8 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 172px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .div-9 {
+  display: inline-flex;
+  align-items: center;
+  gap: 17px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contents-item .div-10 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 159px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .div-11 {
+  height: 57px;
+  justify-content: center;
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 172px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .div-12 {
+  margin-bottom: -3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 159px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contents-item .div-13 {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.contents-item .div-14 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 17px;
+  position: relative;
+  flex: 0 0 auto;
+}
+.contents-item .div-wrapper-3 {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 4px 0px;
+  position: relative;
+  flex: 0 0 auto;
+  border-radius: 8px;
+}
+
+.contents-item .div-15 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 0px 46px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.contents-item .text-wrapper-9 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #484848;
+  font-size: 18px;
+  letter-spacing: 0;
+  line-height: 23.4px;
+  white-space: nowrap;
+}
+
+.contents-item .text-wrapper-10 {
+  font-family: "Pretendard-Medium", sans-serif;
+  font-weight: 500;
+  color: #484848;
+  font-size: 18px;
+  line-height: 23.4px;
+  position: relative;
+  width: fit-content;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
+.contents-item .img1 {
+  margin-bottom: -1px;
+  position: relative;
+  width: 1444px;
+  height: 2px;
+}
+.contents-item .div-16 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 87px;
+  align-items: flex-start;
+  gap: 0px 6px;
+  position: absolute;
+  top: 590px;
+  left: 250px;
+}
+.contents-item .star {
+  position: relative;
+  width: 22.19px;
+  height: 21.11px;
+}
+
+.contents-item .star-2 {
+  position: relative;
+  width: 44.38px;
+  height: 42.21px;
+}
+
+.contents-item .star-3 {
+  position: absolute;
+  width: 32px;
+  height: 31px;
+  top: 34px;
+  left: 2px;
+}
+
+.contents-item .vector-3 {
+  position: absolute;
+  width: 2px;
+  height: 556px;
+  top: 270px;
+  left: 680px;
+}
+
+.contents-item .div-17 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 87px;
+  align-items: flex-start;
+  gap: 0px 6px;
+  position: absolute;
+  top: 420px;
+  left: 1600px;
+}
+.contents-item .element-2 {
+  position: absolute;
+  width: 254px;
+  height: 210px;
+  top: 278px;
+  left: 1650px;
+  object-fit: cover;
+}
+
+.contents-item .image {
+  position: absolute;
+  width: 207px;
+  height: 209px;
+  top: 759px;
+  left: 40px;
+  object-fit: cover;
+}
+.image-paper {
+  width: 1603px;
+  height: 1016px;
+}
+.image-paper .img-pp {
+  position: absolute;
+  width: 1603px;
+  height: 996px;
+  top: 120px;
+  left: 50%;
+  transform: translate(-50%, -6%);
+  object-fit: cover;
+}
+
+.image-paper .img-pp {
+  opacity: 0;
+  transform: translate(-50%, 250px) scale(0.95);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.image-paper.active .img-pp {
+  opacity: 1;
+  transform: translate(-50%, -6%) scale(1);
+  transition-delay: 0.1s;
+}
+
+.sticker-animate {
+  opacity: 0;
+  transform: scale(0.7) rotate(-20deg);
+  transition: opacity 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55),
+    transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+.sticker-animate.active {
+  opacity: 1;
+  transform: scale(1) rotate(0);
+  transition-delay: 0.9s;
+}
+
+/* 타이핑 효과용 */
+.typing {
+  opacity: 0;
+  transition: opacity 0.3s;
+  position: relative;
+  display: inline-block;
+}
+.typing.active {
+  opacity: 1;
+}
+.typing .cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: #fafafa;
+  margin-left: 2px;
+  animation: blink 0.7s steps(1) infinite;
+  vertical-align: bottom;
+}
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.image.sticker-animate {
+  z-index: 20 !important;
+}
+
+.vector-3-bg {
+  position: absolute;
+  width: 2px;
+  height: 556px;
+  top: 270px;
+  left: 680px;
+  opacity: 0;
+  transform: translateY(250px);
+  transition: opacity 0.7s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 2;
+}
+.contents-item .vector-3-bg.active {
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.1s;
+}
+
+.div-2.contents-animate.delay2 {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.div-2.contents-animate.delay2.active {
+  opacity: 1;
+}
+
+/* thank */
+
+.thank {
+  background-color: #0c0c0c;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.thank .div {
+  background-color: #0c0c0c;
+  overflow: hidden;
+  width: 1920px;
+  height: 1080px;
+  position: relative;
+}
+
+.thank .overlap-group {
+  position: absolute;
+  width: 1862px;
+  height: 1080px;
+  top: 0;
+  left: 0;
+}
+
+.thank .image-saturation-up {
+  width: 1040px;
+  height: 277px;
+  top: 0;
+  left: 756px;
+  position: absolute;
+  object-fit: cover;
+}
+
+.thank .img {
+  width: 1143px;
+  height: 406px;
+  top: 674px;
+  left: 0;
+  position: absolute;
+  object-fit: cover;
+}
+
+.thank .frame {
+  display: flex;
+  flex-direction: column;
+
+  width: 1804px;
+  align-items: flex-start;
+  gap: 0px;
+  position: absolute;
+  top: 0;
+  left: 58px;
+  z-index: 10;
+}
+
+.thank .frame-2 {
+  display: flex;
+  align-items: center;
+  gap: 809px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+  margin-top: 20px;
+}
+
+.thank .text-wrapper {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", Helvetica;
+  font-weight: 500;
+  color: #4d4d4d;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+  white-space: nowrap;
+}
+
+.thank .text-wrapper-2 {
+  position: relative;
+  width: 76px;
+  margin-top: -1px;
+  font-family: "Pretendard-Medium", Helvetica;
+  font-weight: 500;
+  color: #4d4d4d;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+
+.thank .vector {
+  position: relative;
+  width: 1803px;
+  height: 1px;
+  margin-bottom: -0.5px;
+  object-fit: cover;
+}
+
+.thank .frame-3 {
+  display: flex;
+  flex-direction: column;
+  width: 1681px;
+  align-items: center;
+  justify-content: center;
+  gap: 51px;
+  position: absolute;
+  top: 277px;
+  left: 119px;
+}
+
+.thank .frame-4 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.thank .frame-5 {
+  display: flex;
+  width: 1558.26px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.thank .text-wrapper-3 {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-weight: 395;
+  color: #fafafa;
+  font-size: 135px;
+  letter-spacing: 0;
+  line-height: 175.5px;
+  white-space: nowrap;
+}
+
+.thank .you-like {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-weight: 395;
+  color: #ffffff;
+  font-size: 135px;
+  letter-spacing: 0;
+  line-height: 175.5px;
+  white-space: nowrap;
+}
+
+.thank .frame-6 {
+  position: absolute;
+  width: 281px;
+  height: 109px;
+  top: 48px;
+  left: 156px;
+}
+
+.thank .frame-7 {
+  display: flex;
+  width: 1682px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  flex: 0 0 auto;
+  margin-right: -0.74px;
+  margin-top: -47px;
+}
+
+.thank .frame-8 {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.thank .to-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px 0px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.thank .to {
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-weight: 395;
+  font-size: 50px;
+  line-height: 65px;
+  color: #5e5e5e;
+  margin-top: 1px;
+}
+
+.thank .payment-wrapper {
+  display: inline-flex;
+  align-items: flex-start;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.thank .payment {
+  font-family: "FONTSPRING DEMO - Annuario Expanded", sans-serif;
+  font-weight: 395;
+  font-size: 135px;
+  line-height: 175.5px;
+  color: #004ccc;
+}
+
+.thank .frame-9 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 15px;
+  padding: 0px 150px;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+
+.thank .frame-10 {
+  position: relative;
+  margin-top: -1px;
+  width: 47.49px;
+}
+
+.thank .p {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
+  color: #979797;
+  font-size: 19px;
+  letter-spacing: -3%;
+  line-height: 150%;
+}
+
+.thank .span {
+  font-weight: 500;
+  color: #757575;
+  letter-spacing: -0.08px;
+}
+
+.thank .text-wrapper-4 {
+  font-family: "Pretendard-Bold", Helvetica;
+  font-weight: 700;
+  color: #a1a1a1;
+  letter-spacing: -0.08px;
+}
+
+.thank .frame-11,
+.thank .image {
+  z-index: 30;
+}
+
+.thank .frame-11 {
+  position: absolute;
+  width: 710px;
+  height: 918px;
+  top: 96px;
+  left: 491px;
+  object-fit: cover;
+}
+
+.thank .image {
+  position: absolute;
+  width: 148px;
+  height: 141px;
+  top: 49px;
+  left: 692px;
+}
+
+.thank .frame-12 {
+  display: flex;
+  flex-direction: column;
+  width: 226px;
+  align-items: flex-start;
+  position: absolute;
+  top: 959px;
+  left: 1575px;
+  border: 1px solid;
+  border-color: #323232;
+}
+
+.thank .frame-13 {
+  display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 18px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+}
+
+.thank .text-wrapper-5 {
+  position: relative;
+  width: fit-content;
+  margin-top: -6px;
+  margin-bottom: -4px;
+  font-family: "Pretendard-SemiBold", Helvetica;
+  font-weight: 600;
+  color: #c4c4c4;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 21.6px;
+  white-space: nowrap;
+}
+
+.thank .text-wrapper-6 {
+  position: relative;
+  width: fit-content;
+  margin-top: -3px;
+  margin-bottom: -1px;
+  font-family: "Rock Salt-Regular", Helvetica;
+  font-weight: 400;
+  color: #c4c4c4;
+  font-size: 12px;
+  letter-spacing: 0;
+  line-height: 16.2px;
+  white-space: nowrap;
+}
+
+.thank .frame-14 {
+  display: flex;
+  height: 34px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 18px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-color: #323232;
+}
+
+.thank .vector-2 {
+  position: absolute;
+  width: 1px;
+  height: 33px;
+  top: -33px;
+  left: 112px;
+}
+
+.thank .vector-3 {
+  position: absolute;
+  width: 1px;
+  height: 34px;
+  top: 34px;
+  left: 94px;
+}
+
+.thank .frame-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: -795px;
+  left: -1176px;
+}
+
+.thank .div-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0px 7px;
+  position: relative;
+  flex: 0 0 auto;
+}
+
+.thank .designed-to-make-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  position: relative;
+  align-self: stretch;
+  flex: 0 0 auto;
+}
+
+.thank .designed-to-make {
+  position: relative;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: "FONTSPRING DEMO - Annuario Expanded-Regular", Helvetica;
+  font-weight: 400;
+  color: transparent;
+  font-size: 135px;
+  letter-spacing: 0;
+  line-height: 175.5px;
+  white-space: nowrap;
+}
+
+.thank .text-wrapper-7 {
+  color: #004ccc;
+}
+
+.thank .text-wrapper-8 {
+  color: #fafafa;
+}
+
+.thanks {
+  margin-top: 60px;
+  position: relative;
+}
+
+.supportme-img {
+  position: absolute;
+  bottom: 120px;
+  right: 200px;
+  width: 226px;
+  height: auto;
+  z-index: 1000;
+  pointer-events: auto;
+}
