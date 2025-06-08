@@ -268,7 +268,7 @@ main {
 .images img {
   opacity: 0;
   transform: translateX(100%);
-  animation: slideInFromRight 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation: slideInFromRight 1.5s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
   animation-delay: 2.4s;
 }
 
@@ -299,6 +299,10 @@ main {
   left: 1550px;
   top: 370px;
   z-index: 3;
+  opacity: 0;
+  animation: priceFadeIn 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
+  display: block !important;
 }
 
 .console {
@@ -321,21 +325,42 @@ main {
   top: 660px;
   /* width: 80.39006286586482px;
   height: 53.77040274988758px; */
-  animation: floatReverse 4.5s ease-in-out infinite;
+  opacity: 0;
+  animation: candyFadeIn 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
 }
 
 .candy2 {
   position: absolute;
   left: 920px;
   top: 937.37109375px;
-  animation: floatReverse 4.5s ease-in-out infinite;
+  opacity: 0;
+  animation: candyFadeIn 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
 }
 
 .candy3 {
   position: absolute;
   left: 1450px;
   top: 850px;
-  animation: floatReverse 4.5s ease-in-out infinite;
+  opacity: 0;
+  animation: candyFadeIn 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+  animation-delay: 2.4s;
+}
+
+@keyframes candyFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.candy1.floating,
+.candy2.floating,
+.candy3.floating {
+  animation: floatReverse 2s ease-in-out infinite;
 }
 
 .red-gum {
@@ -400,14 +425,14 @@ main {
 
 .tags img {
   opacity: 0;
-  transform: translateX(100%);
+  /* transform: translateX(30%) scale(1); */
   animation: slideInFromRight 0.5s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
   animation-delay: 2.4s;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .tags img:hover {
-  transform: translateX(100%) scale(4);
+  transform: translateX(20px) scale(1.2) !important;
   filter: brightness(1.25) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   transform-origin: center;
 }
@@ -459,14 +484,14 @@ main {
 .crayon1 {
   position: absolute;
   left: 1390px;
-  top: 930px;
+  top: 950px;
   animation: float 5s ease-in-out infinite;
 }
 
 .crayon2 {
   position: absolute;
   left: 1485px;
-  top: 980px;
+  top: 983px;
   animation: floatReverse 5s ease-in-out infinite;
 }
 
@@ -494,14 +519,14 @@ main {
 
 @keyframes slideInFromRight {
   0% {
-    transform: translateX(30%);
+    transform: translateX(30%) scale(1);
     opacity: 0;
   }
   20% {
     opacity: 1;
   }
   100% {
-    transform: translateX(0);
+    transform: translateX(0) scale(1);
     opacity: 1;
   }
 }
@@ -531,7 +556,7 @@ main {
   padding: 20px 0px;
   position: relative;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 3.5s;
+  animation-delay: 5s;
   opacity: 0;
 }
 
@@ -636,7 +661,7 @@ main {
   gap: 69px;
   position: relative;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 4s;
+  animation-delay: 5.5s;
   opacity: 0;
 }
 
@@ -664,7 +689,7 @@ main {
   width: 100%;
   flex: 0 0 auto;
   animation: fadeInUp 1s ease-out forwards;
-  animation-delay: 4.5s;
+  animation-delay: 6s;
   opacity: 0;
 }
 
@@ -1429,7 +1454,7 @@ main {
   gap: 10px;
   border-radius: 27px;
   border: 1px solid;
-  border-color: #0c0c0c;
+  border-color: #818181;
   align-items: center;
   position: relative;
 }
@@ -1439,7 +1464,7 @@ main {
   width: fit-content;
   font-family: "Pretendard-Regular", sans-serif;
   font-weight: 400;
-  color: #0c0c0c;
+  color: #818181;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 16.2px;
@@ -2431,4 +2456,57 @@ main {
   height: 68px;
   z-index: 1000;
   pointer-events: auto;
+}
+
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-7deg);
+  }
+  40% {
+    transform: rotate(7deg);
+  }
+  60% {
+    transform: rotate(-7deg);
+  }
+  80% {
+    transform: rotate(7deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes priceFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes receiptShake {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-2deg);
+  }
+  50% {
+    transform: rotate(2deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.price-shake {
+  opacity: 1 !important;
+  animation: receiptShake 3.2s cubic-bezier(0.4, 0, 0.2, 1) infinite !important;
 }

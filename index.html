@@ -15,7 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/pretendard.css"
     />
-    <link href="https://use.typekit.net/[your-kit-code].css" rel="stylesheet" />
+    <!-- <link href="https://use.typekit.net/[your-kit-code].css" rel="stylesheet" /> -->
     <link
       href="https://db.onlinewebfonts.com/c/d3a1c44f6b2e3c7c5f9b5a0c4c3c0f0e?family=FONTSPRING+DEMO+-+Annuario+Expanded"
       rel="stylesheet"
@@ -89,6 +89,26 @@
           transform: rotate(0deg);
         }
       }
+      @keyframes shake {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(-7deg);
+        }
+        40% {
+          transform: rotate(7deg);
+        }
+        60% {
+          transform: rotate(-7deg);
+        }
+        80% {
+          transform: rotate(7deg);
+        }
+        100% {
+          transform: rotate(0deg);
+        }
+      }
       .thank .text-wrapper-3,
       .thank .you-like,
       .thank .frame-8 .to,
@@ -121,6 +141,39 @@
       }
       .thanks {
         position: relative;
+      }
+      .candy1,
+      .candy2,
+      .candy3 {
+        opacity: 0;
+        transform: translateX(100vw);
+        animation: candyEnter 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98) forwards;
+        animation-delay: 2.4s;
+      }
+      @keyframes candyEnter {
+        from {
+          opacity: 0;
+          transform: translateX(100vw);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+      .price {
+        opacity: 0;
+        animation: priceFadeIn 0.7s cubic-bezier(0.17, 0.67, 0.32, 0.98)
+          forwards;
+        animation-delay: 2.4s;
+        display: block !important;
+      }
+      @keyframes priceFadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
       }
     </style>
   </head>
@@ -853,7 +906,9 @@
             <img class="img1" src="./images/line 5.svg" />
             <div class="div-15">
               <div class="text-wrapper-9">PERSONAL 100% PROJECT</div>
-              <div class="text-wrapper-10">UIUX PORTFOLIO</div>
+              <div class="text-wrapper-10">
+                해당 작업물을 클릭하면 PDF 페이지로 이동합니다!
+              </div>
             </div>
             <img class="img1" src="./images/line 5.svg" />
             <div class="div-16">
@@ -1134,6 +1189,81 @@
             tags.style.transition = "opacity 0.6s cubic-bezier(0.4,0,0.2,1)";
             tags.style.opacity = "1";
           }, 1400); // 줄 애니메이션(0.8s) + 약간의 딜레이
+        }
+
+        // 사탕 등장 후 둥둥 애니메이션 적용
+        const candies = [
+          document.querySelector(".candy1"),
+          document.querySelector(".candy2"),
+          document.querySelector(".candy3"),
+        ];
+        candies.forEach(function (candy) {
+          if (candy) {
+            candy.addEventListener("animationend", function handler(e) {
+              if (
+                e.animationName === "slideInFromRight" ||
+                e.animationName === "candyFadeIn"
+              ) {
+                candy.style.transform = "none";
+                candy.style.opacity = "1";
+                candy.style.animation =
+                  "floatReverse 2.0s ease-in-out infinite";
+                candy.removeEventListener("animationend", handler);
+                // 가격택 흔들림 애니메이션은 CSS에서만 제어하므로 JS에서 할당하지 않음
+              }
+            });
+          }
+        });
+
+        const price = document.querySelector(".price");
+        if (price) {
+          price.addEventListener("animationend", function handler(e) {
+            if (
+              e.animationName === "priceFadeIn" ||
+              e.animationName === "slideInFromRight"
+            ) {
+              price.classList.add("price-shake");
+              price.removeEventListener("animationend", handler);
+            }
+          });
+        }
+
+        // 프로필 애니메이션 스크롤 트리거
+        const profileSection = document.querySelector("section.profile");
+        const profileDiv = document.querySelector(".profile .frame .div");
+        const profileDiv4 = document.querySelector(".profile .frame .div-4");
+        const profileDiv5 = document.querySelector(".profile .frame .div-5");
+        let profileAnimated = false;
+        if (profileSection && profileDiv && profileDiv4 && profileDiv5) {
+          // 초기 상태: 애니메이션/딜레이 제거, opacity 0
+          profileDiv.style.opacity = "0";
+          profileDiv.style.animation = "none";
+          profileDiv4.style.opacity = "0";
+          profileDiv4.style.animation = "none";
+          profileDiv5.style.opacity = "0";
+          profileDiv5.style.animation = "none";
+
+          const profileObserver = new IntersectionObserver(
+            (entries) => {
+              if (entries[0].isIntersecting && !profileAnimated) {
+                profileAnimated = true;
+                // 순차적으로 애니메이션 적용 (간격을 조금 더 천천히)
+                profileDiv.style.animation = "fadeInUp 1s ease-out forwards";
+                profileDiv.style.opacity = "1";
+                setTimeout(() => {
+                  profileDiv4.style.animation = "fadeInUp 1s ease-out forwards";
+                  profileDiv4.style.opacity = "1";
+                }, 700);
+                setTimeout(() => {
+                  profileDiv5.style.animation = "fadeInUp 1s ease-out forwards";
+                  profileDiv5.style.opacity = "1";
+                }, 1400);
+                profileObserver.disconnect();
+              }
+            },
+            { threshold: 0.3 }
+          );
+          profileObserver.observe(profileSection);
         }
       });
     </script>
