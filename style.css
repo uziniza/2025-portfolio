@@ -1,22 +1,20 @@
 @font-face {
   font-family: "FONTSPRING DEMO - Annuario Expanded";
-  src: url("fonts/Fontspring-DEMO-annuario-expanded.otf") format("opentype");
+  src: url("./fonts/Fontspring-DEMO-annuario-expanded.otf") format("opentype");
   font-weight: 395;
   font-style: normal;
 }
 
 @font-face {
   font-family: "FONTSPRING DEMO - Annuario Expanded";
-  src: url("fonts/Fontspring-DEMO-annuario-expandedmedium.otf")
-    format("opentype");
+  src: url("./fonts/Fontspring-DEMO-annuario-expanded.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "FONTSPRING DEMO - Annuario Expanded";
-  src: url("fonts/Fontspring-DEMO-annuario-expandedlight.otf")
-    format("opentype");
+  src: url("./fonts/Fontspring-DEMO-annuario-expanded.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
@@ -65,7 +63,7 @@ main {
 /* Info section */
 .info {
   position: absolute;
-  top: 44.04px;
+  top: 30px;
   left: 58px;
   right: 58px;
   display: flex;
@@ -112,7 +110,7 @@ main {
 /* Horizontal Line */
 .horizontal-line {
   position: absolute;
-  top: 88.036376953125px;
+  top: 75px;
   left: 58px;
   right: 58px;
   height: 1px;
@@ -127,7 +125,7 @@ main {
 .title-section {
   position: absolute;
   left: 97.76px;
-  top: 109.55px;
+  top: 100px;
 }
 
 @keyframes slideFromLeft {
@@ -409,7 +407,7 @@ main {
 }
 
 .tags img:hover {
-  transform: translateX(100%) scale(2.7);
+  transform: translateX(100%) scale(4);
   filter: brightness(1.25) drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
   transform-origin: center;
 }
@@ -839,7 +837,7 @@ main {
 .frame .div-14 {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
   position: relative;
   flex: 0 0 auto;
 }
@@ -886,7 +884,7 @@ main {
 .frame .div-16 {
   display: inline-flex;
   align-items: center;
-  gap: 34px;
+  gap: 55px;
   position: relative;
   flex: 0 0 auto;
 }
@@ -909,14 +907,23 @@ main {
   flex-direction: column;
   width: 89.5px;
   align-items: flex-start;
-  gap: 13px;
+  gap: 16px;
   position: relative;
 }
 
 .frame .div-18 {
   display: flex;
   align-items: center;
-  gap: 0px;
+  gap: 42px;
+  position: relative;
+  align-self: stretch;
+  width: 100%;
+  flex: 0 0 auto;
+}
+.frame .div-b18 {
+  display: flex;
+  align-items: center;
+  gap: 28px;
   position: relative;
   align-self: stretch;
   width: 100%;
@@ -925,7 +932,7 @@ main {
 
 .frame .c-SS {
   position: relative;
-  width: 44px;
+  width: 115px;
   margin-top: -1px;
   font-family: "Pretendard-Medium", sans-serif;
   font-weight: 500;
@@ -1709,7 +1716,7 @@ main {
   height: 2px;
 }
 
-.contents-item .web-redesign {
+/* .contents-item .web-redesign {
   position: relative;
   width: fit-content;
   margin-top: -2px;
@@ -1723,7 +1730,7 @@ main {
   letter-spacing: 0;
   line-height: 39px;
   white-space: nowrap;
-}
+} */
 
 .contents-item .div-8 {
   display: inline-flex;
