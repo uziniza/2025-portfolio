@@ -20,13 +20,49 @@
 }
 
 @font-face {
-  font-family: "Pretendard";
-  src: url("./fonts/woff/Pretendard-Regular.woff") format("woff"),
-    url("./fonts/woff2/Pretendard-Regular.woff2") format("woff2");
+  font-family: "Pretendard-web";
+  src: url("/fonts/woff2/Pretendard-Regular.woff2") format("woff2"),
+    url("/fonts/woff/Pretendard-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
+
+/* @font-face {
+  font-family: "Pretendard-web";
+  src: url("./fonts/Pretendard-Regular.woff2") format("woff2"),
+    url("./fonts/Pretendard-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard-web";
+  src: url("./fonts/Pretendard-Medium.woff2") format("woff2"),
+    url("./fonts/Pretendard-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard-web";
+  src: url("./fonts/Pretendard-SemiBold.woff2") format("woff2"),
+    url("./fonts/Pretendard-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard-web";
+  src: url("./fonts/Pretendard-Bold.woff2") format("woff2"),
+    url("./fonts/Pretendard-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+} */
 
 * {
   margin: 0;
@@ -45,7 +81,7 @@ body {
   background-color: #141414;
   overflow-x: hidden;
   overflow-y: auto;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "Pretendard-web";
   color: #fafafa;
 }
 
@@ -82,7 +118,7 @@ main {
   position: absolute;
   left: 0;
   color: #4d4d4d;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -94,7 +130,7 @@ main {
   position: absolute;
   left: 837.5px;
   color: #4d4d4d;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -107,7 +143,7 @@ main {
   position: absolute;
   right: 0;
   color: #4d4d4d;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -214,7 +250,7 @@ main {
 }
 
 .bracket {
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 200;
   font-size: 110px;
   line-height: 143px;
@@ -246,7 +282,7 @@ main {
   margin-bottom: 21px;
   letter-spacing: -0.84px;
   line-height: 37.8px;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   animation: fadeInUp 0.8s ease-out forwards;
   animation-delay: 2s;
   opacity: 0;
@@ -258,7 +294,7 @@ main {
   color: #979797;
   line-height: 28.5px;
   letter-spacing: -0.57px;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   animation: fadeInUp 0.8s ease-out forwards;
   animation-delay: 2.2s;
   opacity: 0;
@@ -602,7 +638,8 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -677,7 +714,8 @@ main {
 .frame .profile {
   position: relative;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #fafafa;
   font-size: 40px;
@@ -724,7 +762,8 @@ main {
   position: relative;
   width: 151px;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #fafafa;
   font-size: 24px;
@@ -988,7 +1027,8 @@ main {
   position: relative;
   width: 151px;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #ffffff;
   font-size: 24px;
@@ -1463,7 +1503,7 @@ main {
   gap: 10px;
   border-radius: 27px;
   border: 1px solid;
-  border-color: #818181;
+  border-color: #0c0c0c;
   align-items: center;
   position: relative;
 }
@@ -1473,7 +1513,7 @@ main {
   width: fit-content;
   font-family: "Pretendard-Regular", sans-serif;
   font-weight: 400;
-  color: #818181;
+  color: #0c0c0c;
   font-size: 12px;
   letter-spacing: 0;
   line-height: 16.2px;
@@ -1529,7 +1569,8 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #0c0c0c;
   font-size: 80px;
@@ -1555,7 +1596,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #0c0c0c;
   font-size: 30px;
@@ -1566,7 +1607,7 @@ main {
 }
 
 .contents-item .text-wrapper {
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #0c0c0c;
   font-size: 30px;
@@ -1623,7 +1664,8 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web",
+    sans-serif;
   font-weight: 400;
   color: #004ccc;
   font-size: 34px;
@@ -1643,7 +1685,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #767676;
   font-size: 16px;
@@ -1671,7 +1713,7 @@ main {
 
 .contents-item .text-wrapper-4 {
   align-self: stretch;
-  font-family: "Pretendard-Medium", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 500;
   color: #1a1a1a;
   font-size: 16px;
@@ -1722,7 +1764,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #004ccc;
   font-size: 14px;
@@ -1733,7 +1775,7 @@ main {
 
 .contents-item .text-wrapper-8 {
   width: fit-content;
-  font-family: "Pretendard-Regular", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #004ccc;
   font-size: 14px;
@@ -1757,7 +1799,7 @@ main {
   margin-left: -9px;
   margin-right: -7px;
   -webkit-text-stroke: 1px #004ccc;
-  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard", sans-serif;
+  font-family: "FONTSPRING DEMO - Annuario Expanded", "Pretendard-web", sans-serif;
   font-weight: 400;
   color: #004ccc;
   font-size: 30px;
@@ -1850,7 +1892,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard-Medium", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 500;
   color: #484848;
   font-size: 18px;
@@ -1860,7 +1902,7 @@ main {
 }
 
 .contents-item .text-wrapper-10 {
-  font-family: "Pretendard-Medium", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 500;
   color: #484848;
   font-size: 18px;
@@ -2112,7 +2154,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard-Medium", Helvetica;
+  font-family: "Pretendard-web", Helvetica;
   font-weight: 500;
   color: #4d4d4d;
   font-size: 14px;
@@ -2125,7 +2167,7 @@ main {
   position: relative;
   width: 76px;
   margin-top: -1px;
-  font-family: "Pretendard-Medium", Helvetica;
+  font-family: "Pretendard-web", Helvetica;
   font-weight: 500;
   color: #4d4d4d;
   font-size: 14px;
@@ -2280,7 +2322,7 @@ main {
   position: relative;
   width: fit-content;
   margin-top: -1px;
-  font-family: "Pretendard", sans-serif;
+  font-family: "Pretendard-web", sans-serif;
   font-weight: 500;
   color: #979797;
   font-size: 19px;
@@ -2351,7 +2393,7 @@ main {
   width: fit-content;
   margin-top: -6px;
   margin-bottom: -4px;
-  font-family: "Pretendard-SemiBold", Helvetica;
+  font-family: "Pretendard-web", Helvetica;
   font-weight: 600;
   color: #c4c4c4;
   font-size: 16px;
